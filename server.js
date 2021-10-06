@@ -37,5 +37,5 @@ app.post(
 );
 
 //connect listener
-
-app.listen(3000, () => console.log(`express erver is running on port 3k`));
+const port = 5060;
+app.listen(port, () => console.log(`express erver is running on port ${port}`));
