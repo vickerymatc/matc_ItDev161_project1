@@ -2,6 +2,7 @@ import express from "express";
 import connectDB from "./config/db";
 import { check } from "express-validator";
 import { validationResult } from "express-validator";
+import cors from "cors";
 
 // init express
 const app = express();
@@ -9,6 +10,11 @@ const app = express();
 connectDB();
 //config middleWare
 app.use(express.json({ extended: false }));
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 
 // api endpoints
 //get
@@ -37,5 +43,5 @@ app.post(
 );
 
 //connect listener
-const port = 5060;
+const port = 5000;
 app.listen(port, () => console.log(`express erver is running on port ${port}`));

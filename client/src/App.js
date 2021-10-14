@@ -23,7 +23,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">GoodThings</header>
+        <header className="App-header">Hows it going Mike!</header>
+        <div className="Content">
+          <h1 className="header1">
+            How's it going Mike, hope your semester is going well too.
+          </h1>
+        </div>
       </div>
     );
   }

@@ -8,7 +8,7 @@
     "start": "node -r esm server.js",
     "server": "nodemon -r esm server.js",
     "client": "npm start --prefix client",
-    "div" : "concurrently \"npm run server\" \"npm run client\""
+    "div": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.6",
+    "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "express-validator": "^6.12.2",
